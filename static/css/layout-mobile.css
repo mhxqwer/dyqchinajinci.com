@@ -1,0 +1,630 @@
+@font-face{
+    font-family: '方正清刻本悦宋简体';
+    src : url('../fonts/fzqk.ttf');
+}
+li{list-style: none;}
+@media (max-width: 767px) {
+	.group-page{
+		font-family: "microsoft yahei";
+		background-color: #e1e1e1;
+		height: auto;
+		padding-top: 62px;
+	}
+	.pagination li span{
+		border: 0;
+	}
+	.pagination .disabled span{
+		background-color: #b6babe;
+	}
+	.pagination .active span{
+		background-color: #b6babe;
+		color: #777;
+	}
+	/* S 头部 */
+	.header-jc{
+		background-color: #eee;
+	}
+	.header-jc .container{
+		height: 62px;
+	}
+	.language{
+		display: none;
+	}
+	.super-search{
+		display: none;
+	}
+	.m-logo{
+		width: 65%;
+	}
+	.m-logo > img{
+		width: 100%;
+	}
+	.search-btn .fa-sort-desc{
+		display: none;
+	}
+	.m-search{
+		position: absolute;
+		top: 6%;
+		right: 15%;
+	}
+	.m-search .search-control .fa-search{
+		font-size: 20px;
+		color: #000;
+	}
+	.m-button{
+		margin: 0;
+		border: 0;
+		margin-top: 12px;
+		margin-right: 15px;
+	}
+	.header-jc .container .navbar-header .m-button:focus{
+		background-color: transparent;
+	}
+	.navbar-header .m-button .icon-bar{
+		background-color: #000;
+		height: 4px;
+		border-radius: 2px;
+		width: 28px;
+	}
+	.m-search .super-search{
+		position: absolute;
+		box-sizing: border-box;
+		top: 100%;
+		left: -532%;
+		border: 0;
+		border-bottom: 1px solid #fff;
+		background-color: rgba(225,225,225,.9);
+	}
+	.searchinput{
+		width: 90%;
+		float: left;
+		border-right: 0;
+		border-bottom-right-radius: 0;
+		border-top-right-radius: 0;
+	}
+	.search-box .fa-search{
+		width: 10%;
+		float: left;
+		height: 31px;
+	}
+	.header-jc .navbox{
+		position: absolute;
+		top: 62px;
+		left: 0;
+		width: 100%;
+		background-color: rgba(225,225,225,.9);
+		font-size: 16px;
+		margin: 0;
+	}
+	.header-jc .navbox .jc-nav li .backsy{
+		float: none;
+	}
+	.header-jc .navbox .jc-nav > li > a{
+		color: #000;
+		width: 50%;
+		float: left;
+		line-height: 50px;
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 16px;
+	}
+	.header-jc .navbox .jc-nav li .m-jt{
+		float: right;
+		line-height: 50px;
+	}
+	.header-jc .navbox .jc-nav li .fa-angle-down{
+		display: none;
+	}
+	.header-jc .jc-nav .dropdown:hover > a {
+	    color: #000;
+	}
+	.header-jc .navbox .jc-nav .open .fa-angle-down{
+		display: inline-block;
+	}
+	.header-jc .navbox .jc-nav .open .fa-angle-right{
+		display: none;
+	}
+	.header-jc .navbox .jc-nav .active a{
+		background-color: transparent;
+		color: #000;
+	}
+	.header-jc .navbox .jc-nav .dropdown .secondnav{
+		padding-top: 50px;
+	}
+	.header-jc .navbox .jc-nav li .secondnav li a{
+		float: none;
+		font-size: 15px;
+		color: #000;
+		line-height: 25px;
+	}
+	.jc-nav .open .secondnav{
+		background-color: transparent;
+	}
+	/* E 头部 */
+	
+	/* S 一般列表页 */
+	.container-jc{
+		padding: 0 15px;
+	}
+	.container-jc .article-box{
+		margin-bottom: 0;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.container-jc .category-title .breadcrumb li {
+		font-size: 15px;
+		font-weight: bold;
+	}
+	.container-jc .category-title {
+		border-bottom: 1px solid #000;
+		margin-bottom: 5px;
+	}
+	.container-jc .breadcrumb > li + li:before {
+	    color: #000;
+	}
+	.menubox{
+		display: none;
+	}
+	.article-list{
+		background-color: #e1e1e1;
+	}
+	.article-cont .imgstyle{
+		height: 184px;
+	}
+	.article-cont .imgstyle > img{
+		width: 100%;
+		height: 100%;
+	}
+	.article-cont .txt{
+		display: none;
+	}
+	.cont{
+		padding: 15px 0;
+		background-color: #fff;
+	}
+	.cont .ellipsis{
+		margin: 0;
+		font-size: 15px;
+		padding: 0 5px;
+	}
+	/* E 一般列表页 */
+	
+	/* S 文明列表页 */
+	.culture-img{
+		display: none;
+	}
+	.smenu-list{
+		display: none;
+	}
+	.module-title{
+		display: none;
+	}
+	.wm-item{
+		margin: 10px 0;
+		padding: 10px 5px;
+		border-bottom: 1px solid #aaa;
+	}
+	.wm-item-body .article-title{
+		width: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	/* E 文明列表页 */
+	
+	/* S 专题列表页 */
+	.zt-channel{
+		display: none;
+	}
+	.container-zt .main-left{
+		display: none;
+	}
+	/* E 专题列表页 */
+	
+	/* S 有时间的列表页 */
+	.article-list .article-cont .date{
+		display: none;
+	}
+	.article-list .article-cont .m-date{
+		background-color: #fff;
+		padding-bottom: 15px;
+		margin-top: -10px;
+		font-size: 15px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.article-cont .cont .m-ellipsis{
+		margin: 0;
+		font-size: 15px;
+		padding: 0 5px;
+	}
+	/* E 有时间的列表页 */
+	
+	/* S 瀑布流 */
+	.container-pb .screen{
+		display: none;
+	}
+	.container-pb .category-title{
+		margin-left: 15px;
+		margin-right: 15px;
+		border-bottom: 1px solid #000;
+		font-size: 15px;
+	}
+	.container-pb .category-title .breadcrumb{
+		padding: 0;
+	}
+	.container-pb .category-title .breadcrumb li {
+	    font-size: 15px;
+	    font-weight: bold;
+	}
+	.container-pb .breadcrumb > li + li:before {
+	    color: #000;
+	}
+	#masonry .item{
+		width: 46%;
+	}
+	#masonry .item .img-zoom{
+		width: 100%;
+	}
+	#masonry .item .img-zoom img{
+		width: 100%;
+	}
+	#masonry .jp-pb-title{
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-size: 15px;
+		font-weight: bold;
+		margin-top: 5px;
+	}
+	/* E 瀑布流 */
+	
+	/* S 三展览馆 */
+	.container-zl{
+		padding: 0 15px;
+	}
+	.bannerimg{
+		background-size: cover;
+		width: 100%;
+		height: 168px;
+		position: relative;
+	}
+	.channel-navbox{
+		width: 100%;
+		position: absolute;
+		top: 120%;
+		z-index: 100;
+		height: 46px;
+		overflow: hidden;
+	}
+	.channel-navbox .zl-nav{
+		padding: 8px 60px 8px 20px;
+		background-color: rgba(238,238,238,.6);
+	}
+	.channel-navbox .zl-nav:after{
+		clear: both;
+		content: ".";
+		overflow: hidden;
+		visibility: hidden;
+		height: 0;
+		display: block;
+	}
+	.zl-nav li{
+		float: left;
+		font-size: 15px;
+		line-height: 35px;
+		font-family: "方正清刻本悦宋简体";
+		font-weight: bold;
+	}
+	.sanjiao{
+		position: absolute;
+		top: 7px;
+		right: 36px;
+		color: #000;
+	}
+	.intro::before{
+		content: "";
+		display: table;
+	}
+	.intro{
+		margin-top: 90px;
+	}
+	.intro-left{
+		display: none;
+	}
+	.intro-right{
+		position: relative;
+	}
+	.intro-right .xqbtn{
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 15px;
+	}
+	.inner-list{
+		display: none;
+	}
+	.m-innerlist{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		position: relative;
+	}
+	.m-innerlist ul {
+	    list-style: none;
+	    padding: 0;
+	    margin: 0;
+	    height: 100%;
+	    overflow: hidden;
+	}
+	.m-innerlist li{
+	    position: absolute;
+	    margin: 0;
+	    padding: 0;
+	    height: 100%;
+	    display: -webkit-box;
+	    -webkit-box-pack: center;
+	    -webkit-box-align: center;
+	    list-style: none;
+	}
+	.draw-list li{
+		margin-top: -25px;
+	}
+	.calligraphy-list li{
+		margin-top: -80px;
+	}
+	.m-innerlist li p{
+	    text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.m-innerlist li img{
+	    width: 100%;
+	}
+	.intro-title{
+		font-size: 18px;
+		font-family: "方正清刻本悦宋简体";
+		font-weight: bold;
+		color: #333;
+		margin-bottom: 12px;
+	}
+	.intro-txt{
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 20px;
+	}
+	.inner-head .zpj-screen{
+		display: none;
+	}
+	.inner-head:after{
+		clear: both;
+		overflow: hidden;
+		visibility: hidden;
+		height: 0;
+		content: ".";
+		display: block;
+	}
+	.inner-head .zpj-title{
+		float: left;
+	}
+	.inner-head .xqbtn{
+		float: right;
+		margin-top: 16px;
+		font-size: 15px;
+	}
+	.zpj-title{
+		font-size: 18px;
+		font-weight: bold;
+		font-family: "方正清刻本悦宋简体";
+		margin: 17px 0 12px;
+	}
+	/* E 三展览馆 */
+	
+	/* S 底部 */
+	.footer{
+		background-color: #a8a8a8;
+	}
+	.footer .container > h2{
+		display: none;
+	}
+	.footer .container{
+		text-align: center;
+	}
+	.state{
+		display: none;
+	}
+	.footer-r{
+		display: none;
+	}
+	.divider{
+		display: none;
+	}
+	.sydw{
+		display: none;
+	}
+	.introme > a{
+		display: block;
+	}
+	.introme .shu{
+		display: none;
+	}
+	.copyright a{
+		display: block;
+	}
+	.footer address{
+		margin-bottom: 0;
+	}
+	address > a{
+		margin-top: 10px;
+	}
+	/* E 底部 */
+	#floatbtn{
+		display: none;
+	}
+	
+	/* S 馆长信箱 */
+	.message-header{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.message-header .message-title{
+		text-align: center;
+	}
+	.message-header .message-title h3{
+		font-weight: bold;
+	}
+	.message-header .message-btn{
+		text-align: center;
+	}
+	.message-header .message-btn a{
+		margin: 0 10px;
+	}
+	.message-btn{
+		margin-bottom: 15px;
+	}
+	.message-text{
+		overflow:hidden;
+		text-overflow:ellipsis;
+		display:-webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-line-clamp:2; 
+	}
+	.message-list-header{
+		margin-bottom: 15px;
+	}
+	.message-list-header span{
+		font-weight: bold;
+	}
+	.message-list{
+		margin-bottom: 10px;
+	}
+	.message-list-box{
+		padding-left: 0;
+	}
+	.detial-title{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.detial-list{
+		margin-bottom: 10px;
+	}
+	/* E 馆长信箱 */
+
+	/* S 百年庆典 */
+	.centurybanner{
+		display: none;
+	}
+	.m-centurybanner{
+		width: 100%;
+	}
+	.m-centurybanner > img{
+		width: 100%;
+	}
+	.ccbg-box{
+		background-color: #fff;
+		padding: 10px;
+	}
+	.ccbg-container{
+		padding: 0 15px;
+	}
+	.hdjy{
+		padding: 0 15px 20px;
+	}
+	.hhwzbg{
+		background-color: #fff;
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		padding: 15px;
+	}
+	.ccbg-head:after{
+		content: ".";
+		overflow: hidden;
+		visibility: hidden;
+		height: 0;
+		clear: both;
+		display: block;
+	}
+	.ccbg-title{
+		float: left;
+		font-weight: bold;
+		color: #D80808;
+		border-left: 4px solid #D80808;
+		padding-left: 5px;
+	}
+	.ccbg-title > img{
+		display: none;
+	}
+	.gengduo{
+		float: right;
+		margin: 20px 0;
+		color: #090909;
+	}
+	.ccbg-list{
+		padding: 5px 0;
+	}
+	.ccbg-list:after{
+		content: ".";
+		overflow: hidden;
+		visibility: hidden;
+		height: 0;
+		clear: both;
+		display: block;
+	}
+	.newstitle{
+		float: left;
+		width: 75%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		color: #090909;
+	}
+	.newsdata{
+		float: right;
+		color: #090909;
+	}
+	.hdjy-head:after{
+		content: ".";
+		overflow: hidden;
+		visibility: hidden;
+		height: 0;
+		clear: both;
+		display: block;
+	}
+	.hdjy-title{
+		float: left;
+		font-weight: bold;
+		color: #D80808;
+		border-left: 4px solid #D80808;
+		padding-left: 5px;
+	}
+	.hdjy-title > img{
+		display: none;
+	}
+	.hdjy-list{
+		padding: 5px 0;
+	}
+	.hdjy-list:after{
+		content: ".";
+		overflow: hidden;
+		visibility: hidden;
+		height: 0;
+		clear: both;
+		display: block;
+	}
+	.hdjy-box{
+		background-color: #fff;
+	}
+	.hdjy-news-box{
+		padding: 10px;
+	}
+	.hdjy-lb{
+		padding: 4px;
+	}
+	#hdjy-focus .carousel-inner .carousel-img{
+		height: 230px;
+	}
+	/* E 百年庆典 */
+}
